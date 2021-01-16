@@ -9,3 +9,12 @@ getsolve =function() m
 list(set = set, get = get,
 setsolve = setsolve,
 getsolve = getsolve)}
+
+                           
+cacheSolve = function(x, ...)
+{m = x$getInverse()
+if(!isnull(m))
+{return(m)
+} m = solve(x$get())
+ x$setInverse(m)
+m}                           
